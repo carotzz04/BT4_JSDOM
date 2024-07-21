@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+
+<body>
+    <h1 class="shadow">To Do List</h1>
+    <hr class="line">
+
+    <form id="formCategory">
+        <input id="inputCategory" placeholder="Add category">
+        <button type="submit">Add Category</button>
+    </form>
+
+    <form id="formTask">
+        <input id="inputTask" placeholder="Add task">
+        <select id="selectCategory" required>
+            <option value="" disabled selected>Select Category</option>
+        </select>
+        <select id="selectStatus">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <button type="submit">Add Task</button>
+        <button id="saveBtn">Save</button>
+    </form>
+
+    <br><hr class="line"><br>
+    <form>
+        <ul id="tasks">
+            <!-- <li class="completed">Task 1 <button>Remove</button></li>
+            <li>Task 1 <button>Remove</button></li> -->
+        </ul>
+    </form>
+
+    <script src="todolist.js"></script>
+</body>
+
+</html>
